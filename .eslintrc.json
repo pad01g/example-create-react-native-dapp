@@ -2,7 +2,9 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "env": {
-    "es6": true
+    "es6": true,
+    "node": true,
+    "mocha": true
   },
   "ignorePatterns": [
     "node_modules",
@@ -11,7 +13,8 @@
     "babel.config.js",
     "metro.config.js",
     "hardhat.config.js",
-    "__tests__/contracts"
+    "__tests__/contracts",
+    "__tests__/frontend"
   ],
   "plugins": [
     "import",
@@ -31,7 +34,8 @@
   ],
   "globals": {
     "console": true,
-    "__DEV__": true
+    "__DEV__": true,
+    "ethers": "readonly"
   },
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -72,7 +76,8 @@
     "react-native/no-inline-styles": 2,
     "react-native/no-color-literals": 2,
     "react-native/no-raw-text": 2,
-    "react-native/no-single-element-style-arrays": 2
+    "react-native/no-single-element-style-arrays": 2,
+    "@typescript-eslint/no-var-requires": 0
   },
   "parserOptions": {
     "ecmaFeatures": {

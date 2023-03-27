@@ -75,3 +75,8 @@ package-lock.json
 # Hardhat
 artifacts/
 cache/
+node_modules
+
+#Hardhat files
+cache
+artifacts
